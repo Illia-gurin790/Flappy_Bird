@@ -7,9 +7,9 @@ import java.awt.Color;
  */
 public class SpritePalettes {
     public static final Color[] BIRD = new Color[] {
-        new Color(0, 0, 0),            // 1 outline/eye
+        Constants.PIPE_BORDER,          // 1 outline/eye
         Constants.BIRD_COLOR,           // 2 main body
-        new Color(255, 140, 0),         // 3 shading
+        Constants.PIPE_COLOR,           // 3 shading
         new Color(0, 0, 0, 0)           // 4 transparent
     };
 

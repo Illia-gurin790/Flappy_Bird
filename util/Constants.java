@@ -23,11 +23,12 @@ public class Constants {
 
     public static final int TIMER_DELAY = 16;
 
-    public static final Color SKY_COLOR = new Color(88, 170, 255);
-    public static final Color GROUND_COLOR = new Color(217, 196, 130);
-    public static final Color BIRD_COLOR = new Color(255, 200, 0);
-    public static final Color PIPE_COLOR = new Color(50, 175, 50);
-    public static final Color PIPE_BORDER = new Color(45, 145, 45);
+    public static final Color SKY_COLOR = new Color(227, 244, 219);
+    public static final Color GROUND_COLOR = new Color(150, 194, 128);
+    public static final Color BIRD_COLOR = new Color(150, 194, 128);
+    public static final Color PIPE_COLOR = new Color(75, 115, 100);
+    public static final Color PIPE_BORDER = new Color(10, 32, 50);
+    public static final Color TEXT_COLOR = new Color(10, 32, 50);
 
     public static final Font TITLE_FONT = new Font("Arial", Font.BOLD, 34);
     public static final Font SCORE_FONT = new Font("Arial", Font.BOLD, 40);

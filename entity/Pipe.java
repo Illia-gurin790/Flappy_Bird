@@ -6,6 +6,7 @@ import java.awt.Rectangle;
 import PixelSprites.Pipe_down;
 import PixelSprites.Pipe_up;
 import util.Constants;
+import util.SpritePalettes;
 import util.SpriteRenderer;
 
 public class Pipe {

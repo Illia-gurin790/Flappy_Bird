@@ -91,7 +91,7 @@ public class FlappyGame extends JPanel implements ActionListener, KeyListener, M
         g.fillRect(0, Constants.WINDOW_HEIGHT - Constants.FLOOR_HEIGHT, Constants.WINDOW_WIDTH, Constants.FLOOR_HEIGHT);
 
         // Score display
-        g.setColor(Color.WHITE);
+        g.setColor(Constants.TEXT_COLOR);
         g.setFont(Constants.SCORE_FONT);
         String scoreText = String.valueOf(score);
         FontMetrics fm = g.getFontMetrics();
@@ -108,12 +108,13 @@ public class FlappyGame extends JPanel implements ActionListener, KeyListener, M
     private void drawMenu(Graphics2D g) {
         LogoSprite.draw(g, Constants.WINDOW_WIDTH / 2, 120);
         g.setFont(Constants.TITLE_FONT);
-        g.setColor(Color.WHITE);
+        g.setColor(Constants.TEXT_COLOR);
         String title = "FLAPPY BIRD";
         FontMetrics fm = g.getFontMetrics();
         g.drawString(title, (Constants.WINDOW_WIDTH - fm.stringWidth(title)) / 2, 220);
 
         g.setFont(Constants.INFO_FONT);
+        g.setColor(Constants.TEXT_COLOR);
         String hint = "Press SPACE or CLICK to start";
         g.drawString(hint, (Constants.WINDOW_WIDTH - g.getFontMetrics().stringWidth(hint)) / 2, 300);
 
@@ -123,12 +124,13 @@ public class FlappyGame extends JPanel implements ActionListener, KeyListener, M
 
     private void drawGameOver(Graphics2D g) {
         g.setFont(Constants.GAME_OVER_FONT);
-        g.setColor(new Color(255, 255, 255, 240));
+        g.setColor(new Color(255, 255, 255, 220));
         String over = "GAME OVER";
         FontMetrics fm = g.getFontMetrics();
         g.drawString(over, (Constants.WINDOW_WIDTH - fm.stringWidth(over)) / 2, 220);
 
         g.setFont(Constants.INFO_FONT);
+        g.setColor(Constants.TEXT_COLOR);
         String result = "Score: " + score + "   Best: " + bestScore;
         g.drawString(result, (Constants.WINDOW_WIDTH - g.getFontMetrics().stringWidth(result)) / 2, 280);
 
